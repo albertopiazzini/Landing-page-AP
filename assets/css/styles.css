@@ -328,10 +328,11 @@ footer {
 
 .img-container {
   position: relative;
-  width: 500px;
+  width: 450px;
   height: 350px;
   margin: 25px;
   z-index: 0;
+  border: 2px, solid, #1e96fc;
 }
 
 .photo-project-new {
@@ -361,11 +362,11 @@ footer {
 }
 
 .img-container:hover .photo-project-new {
-  opacity: 0.08;
+  /*opacity: 0.08;*/
 }
 
 .img-container:hover .info {
-  opacity: 1;
+  /*opacity: 1; */
 }
 
 .info p {
