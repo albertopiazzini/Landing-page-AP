@@ -1,0 +1,27 @@
+body {
+  height: 100%;
+}
+
+
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+  min-height: 80vh;
+}
+
+.box {
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 500px) {
+  main {
+    margin-top: 80px;
+
+
+}
+}

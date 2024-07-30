@@ -1,0 +1,398 @@
+@font-face {
+  font-family: "amiri";
+  src: url("../Font-amiri/Amiri-Regular.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "amiri";
+  src: url("../Font-amiri/Amiri-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "amiri";
+  src: url("../Font-amiri/Amiri-Bold.ttf");
+  font-weight: bold;
+}
+
+body {
+  text-align: center;
+  font-family: amiri;
+}
+
+.homepage {
+  display: flex;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 92.2vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.logo-navbar {
+  width: 65px;
+}
+.blue-title {
+  color: #1e96fc;
+}
+
+.ImgAlberto {
+  width: 30%;
+}
+.grow img {
+  transition: 1s ease;
+}
+.grow img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+
+.logo-navbar {
+  font-size: 1.5em;
+}
+
+.title {
+  text-align: center;
+  color: #1e96fc;
+  font-family: amiri;
+  font-weight: bold;
+  font-size: 2em;
+}
+.box-animation {
+  position: relative;
+  z-index: 0;
+  margin-top: 50px;
+}
+
+.box-animation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  animation: blinkCursor 0.8s steps(3) infinite;
+}
+@keyframes blinkCursor {
+  0%,
+  75% {
+    opacity: 1;
+  }
+  76%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.welcome {
+  position: relative;
+  border-right: 4px;
+  color: black;
+  letter-spacing: 5px;
+  font-family: amiri;
+  font-style: italic;
+  font-size: 1.4rem;
+  animation: typing 8s steps(31) infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+@keyframes typing {
+  0%,
+  90%,
+  100% {
+    width: 0;
+  }
+  30%,
+  60% {
+    width: 446.58px;
+  }
+}
+/*
+.box {
+  padding: 30px;
+  background-color: #a2d6f9;
+  display: flex;
+  width: 70%;
+  margin: 10px auto;
+  justify-content: center;
+  border-radius: 25px;
+  margin-bottom: 120px;
+  transition: transform 1s, opacity 1s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+*/
+
+.box {
+  margin-bottom: 40px;
+  margin-top: 30px;
+  transition: transform 1s, opacity 1s;
+  width: 100%;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+.box--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+.row {
+  align-items: center;
+}
+
+.banner {
+  background-color: #1e96fc;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 120px;
+  margin-bottom: 100px;
+}
+.text-scroll {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 992px) {
+  .description p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.1em;
+  }
+  .photo-project {
+    margin: 5px;
+    width: 250;
+    height: 200;
+  }
+
+  .about-me p {
+    font-size: 1.1em;
+  }
+
+  .contact p {
+    font-size: 1em;
+    margin-top: 5px;
+  }
+
+  .ImgAlberto {
+    width: 35%;
+  }
+}
+
+.box-about-me {
+  padding: 30px;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 22px;
+  font-family: amiri;
+}
+
+.about-me p {
+  font-size: 1.2em;
+}
+.about-me a {
+  color: inherit;
+}
+.logo {
+  width: 50px;
+  margin: 8px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact p {
+  font-size: 1.1em;
+  font-family: amiri;
+  margin-top: 7px;
+}
+
+.icon {
+  width: 28px;
+  height: 22px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form textarea {
+  border: 2px solid #1e96fc;
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  width: 85%;
+  max-width: 500px;
+  font-family: amiri;
+}
+form button {
+  padding: 13px;
+  background: #1e96fc;
+  color: black;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 140px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+  font-family: amiri;
+}
+#buttonSubmit:hover {
+  background-color: #44a9ff;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+.words-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.box p {
+  font-family: amiri;
+}
+.thanks {
+  font-size: 0.9em;
+}
+
+#liveAlertPlaceholder {
+  position: relative;
+  top: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .ImgAlberto {
+    width: 55%;
+  }
+
+  .img-container {
+    width: 230px;
+    height: 150px;
+  }
+
+  .sticky-mobile {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 9999;
+  }
+  .welcome {
+    font-size: 1rem;
+  }
+  .box-about-me {
+    padding: 22px;
+  }
+
+  @keyframes typing {
+    0%,
+    90%,
+    100% {
+      width: 0;
+    }
+    30%,
+    60% {
+      width: 363.27px;
+    }
+  }
+  .banner {
+    height: 110px;
+  }
+  .banner span {
+    font-size: 30px;
+  }
+}
+
+.img-container {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  margin: 25px;
+  z-index: 0;
+}
+
+.photo-project-new {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+.info {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.img-container:hover .photo-project-new {
+  opacity: 0.08;
+}
+
+.img-container:hover .info {
+  opacity: 1;
+}
+
+.info p {
+  font-size: 19px;
+}
+
+.btn-link {
+  text-align: center;
+  height: 80px;
+  width: 125px;
+  padding: 15px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 23px;
+  border: 2px solid #1e96fc;
+}
+.btn-link a {
+  text-decoration: none;
+  color: black;
+}
+.btn-link:hover {
+  color: white;
+  background-color: #1e96fc;
+  font-size: 19px;
+}
