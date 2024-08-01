@@ -283,53 +283,10 @@ footer {
   top: 10px;
 }
 
-@media screen and (max-width: 500px) {
-  .ImgAlberto {
-    width: 55%;
-  }
-
-  .img-container {
-    width: 200px;
-    height: 50px;
-  }
-
-  .sticky-mobile {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 9999;
-  }
-  .welcome {
-    font-size: 1rem;
-  }
-  .box-about-me {
-    padding: 22px;
-  }
-
-  @keyframes typing {
-    0%,
-    90%,
-    100% {
-      width: 0;
-    }
-    30%,
-    60% {
-      width: 363.27px;
-    }
-  }
-  .banner {
-    height: 110px;
-  }
-  .banner span {
-    font-size: 30px;
-  }
-}
-
 .img-container {
   position: relative;
-  width: 320px;
-  height: 220px;
+  width: 420px;
+  height: 320px;
   margin: 25px;
   z-index: 0;
   border: 2px, solid, #1e96fc;
@@ -396,4 +353,48 @@ footer {
   color: white;
   background-color: #1e96fc;
   font-size: 19px;
+}
+
+@media screen and (max-width: 500px) {
+  .ImgAlberto {
+    width: 55%;
+  }
+
+  .img-container {
+    width: 320px;
+    height: 220px;
+    border: 2px solid #1e96fc;
+  }
+
+  .sticky-mobile {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 9999;
+  }
+  .welcome {
+    font-size: 1rem;
+  }
+  .box-about-me {
+    padding: 22px;
+  }
+
+  @keyframes typing {
+    0%,
+    90%,
+    100% {
+      width: 0;
+    }
+    30%,
+    60% {
+      width: 363.27px;
+    }
+  }
+  .banner {
+    height: 110px;
+  }
+  .banner span {
+    font-size: 30px;
+  }
 }
