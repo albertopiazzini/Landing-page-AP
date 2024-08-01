@@ -318,6 +318,11 @@ footer {
   flex-direction: column;
 }
 
+.img-container a {
+  position: relative;
+  z-index: 2;
+}
+
 .img-container:hover .photo-project-new {
   /*opacity: 0.08;*/
 }
